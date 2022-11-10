@@ -1,0 +1,208 @@
+body {
+    background-color: #848484;
+    background: url("https://i.imgur.com/jziexPv.png");
+ }
+ table {
+   width: 100%;
+ }
+ #one {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    transition: all 1s;
+    top: 0px;
+    left: 0px;
+    border-right: 30px solid;
+    border-color: #2f090b;
+    background-position: top;
+    z-index: 1;
+    background-position: fixed;
+    opacity: .5;
+ }
+ #one:hover {
+    opacity: 1;
+ }
+ #bodytext {
+    position: absolute;
+    width: 66%;
+    overflow: auto;
+    left: 29%;
+    top: 7%;
+    background-color: #fff;
+    padding: 200px 10px 10px 10px;
+    border: 10px solid;
+    border-color: #0f0e12;
+ }
+ #header {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    height: 12%;
+    z-index: 6;
+    background: url("https://i.imgur.com/onBejZ0.png");
+    background-size: cover;
+    border-bottom: 16px solid;
+    border-image: url(https://i.imgur.com/zkYzXXX.png) 30 stretch;
+ }
+ #headerimage {
+    position: absolute;
+    background: url("https://i.imgur.com/tRqBbgM.png");
+    top: 2%;
+    left: 0px;
+    width:  100%;
+    height:  80px;
+    background-repeat:no-repeat;
+    z-index: 7;
+    transition: all 1s;
+ }
+ #headerimage:hover {
+    background: url("https://i.imgur.com/tRqBbgM.png");
+    background-repeat:no-repeat;
+ }
+ #headerfloat {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    z-index: 5;
+    background: url("https://i.imgur.com/onBejZ0.png");
+    background-size: cover;
+    border-bottom: 16px solid;
+    border-image: url(https://i.imgur.com/zkYzXXX.png) 30 stretch;
+ 
+    font-size: 20px;
+ }
+ #headerimagefloat {
+    position: fixed;
+    background: url("https://i.imgur.com/UIh4kxH.png");
+    top: 2px;
+    left: 15px;
+    width:  100%;
+    height:  40px;
+    background-repeat:no-repeat;
+    z-index: 5;
+    transition: all 1s;
+    opacity: .3;
+ }
+ #headerimagefloat:hover {
+    background: url("https://i.imgur.com/tJhvvam.png");
+    background-repeat:no-repeat;
+    opacity: 1;
+ }
+ #headermedium {
+    position: absolute;
+    color: #FFF;
+    font-size: 25pt;
+    text-align: center;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background: url("https://i.imgur.com/onBejZ0.png");
+    background-size: cover;
+    border-bottom: 16px solid;
+    border-top: 6px solid;
+    border-image: url(https://i.imgur.com/zkYzXXX.png) 30 stretch;
+    padding-top: 10px;
+ }
+ #navi {
+    position: fixed;
+    top:0px;
+    right: 20px;
+    height: 50px;
+    width: 100px;
+    z-index: 8;
+    background: url("https://i.imgur.com/jkFgyyc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 6px solid;
+    border-top: 0px solid;
+    border-bottom: 16px solid;
+    border-color: #5a5e33;
+    background-position: top;
+    transition: all .7s;
+    overflow: hidden;
+    text-align: center;
+    opacity: .3;
+ }
+ #navi:hover {
+    height: 300px;
+    right: 15px;
+    width: 150px;
+    background: url("https://i.imgur.com/9EqhQoI.png");
+    background-position: top;
+    border-top: 0px solid;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 30px solid;
+    border-color: #6e1524;
+    overflow: hidden;
+    opacity: 1;
+ }
+ #navi1 {
+    background-color: #bb3137;
+    color: #FFF;
+    font-size: 25px;
+    height: 30px;
+    transition: all .7s;
+    border-top: 10px solid;
+    border-bottom: 5px solid;
+    border-color: #82191d;
+ }
+ #navi1:hover {
+    background-color: #5c1013;
+    border-top: 10px solid;
+    border-bottom: 5px solid;
+    border-color: #82191d;
+    color: #e54a50;
+    font-style: italic;
+ }
+#navi2 {
+   background-color: #5c1013;
+   color: #e54a50;
+   font-size: 25px;
+   height: 30px;
+   transition: all .7s;
+   border-top: 10px solid;
+   border-bottom: 5px solid;
+   border-color: #82191d;
+   font-style: italic;
+}
+ #bottom {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 20px;
+    z-index: 6;
+    background: url("https://i.imgur.com/zkYzXXX.png");
+    background-size: cover;
+    background-size: cover;
+    border-top: 8px solid;
+    border-image: url(https://i.imgur.com/onBejZ0.png) 30 stretch;
+    color: #912c37;
+    padding-left: 10px;
+ }
+ .blocktext {
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    border: 2pt solid #cfcfcf;
+    margin: 0 auto;
+    background-color: #bababa;
+    color: #2b2b2b;
+    margin-bottom: 35px;
+ }
+ a {
+   color: #b1999c;
+   text-decoration: none; /* no underline */
+ }
+ a:hover {
+    color: #FFF;
+    text-decoration: underline;
+ }
+ i {
+    color: #555555;
+ }

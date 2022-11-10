@@ -1,0 +1,366 @@
+   <script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+//-->
+</script>
+<style>
+body {
+   background-color: #1b1515;
+}
+#one {
+   position: absolute;
+   width: 25%;
+   height: 90%;
+   background: url("https://i.imgur.com/QZGwm02.jpg");
+   transition: all 1s;
+   top: 10%;
+   left: 0px;
+   border-right: 30px solid;
+   border-color: #bb3137;
+   background-position: top;
+   z-index: 5;
+}
+#one:hover {
+   width: 40%;
+   background-size: cover;
+   border-right: 40px solid;
+   background: url("https://i.imgur.com/iyxLN4F.jpg");
+   border-radius: 0px 100px 100px 0px;
+   border-color: #442a54;
+}
+#two {
+   position: absolute;
+   width: 24%;
+   height: 90%;
+   background: url("https://i.imgur.com/iU73pyh.png");
+   transition: all 1s;
+   top: 10%;
+   left: 26%;
+   border-right: 30px solid;
+   border-color: #31268b;
+   background-position: top;
+   z-index: 4;
+}
+#two:hover {
+   width: 40%;
+   background-size: cover;
+   border-right: 40px solid;
+   background: url("https://i.imgur.com/kiOaYBo.png");
+   border-radius: 0px 100px 100px 0px;
+   border-color: #666d29;
+   }
+#three {
+   position: absolute;
+   width: 25%;
+   height: 90%;
+   background: url("https://i.imgur.com/A3QKtcL.png");
+   transition: all 1s;
+   top: 10%;
+   left: 51%;
+   border-right: 30px solid;
+   border-color: #a39244;
+   background-position: top;
+   z-index: 3;
+}
+#three:hover {
+   width: 40%;
+   background-size: cover;
+   border-right: 40px solid;
+   background: url("https://i.imgur.com/1DvLagk.png");
+   border-radius: 0px 100px 100px 0px;
+   border-color: #226855;
+   }
+#four {
+   position: absolute;
+   width: 22%;
+   height: 90%;
+   transition: all 1s;
+   background: url("https://i.imgur.com/jNhECGl.png");
+   background-position: top;
+   top: 10%;
+   right: 0%;
+   border-left: 12px solid;
+   border-color: #8eab3e;
+}
+#four:hover {
+   width: 40%;
+   z-index: 4;
+   background: url("https://i.imgur.com/I1v4vFB.png");
+   background-position: top;
+   border-left: 40px solid;
+   border-color: #5a5e33;
+   border-radius: 100px 0px 0px 100px;
+}
+#text {
+   position: absolute;
+   text-align: center;
+   opacity: 0.01;
+   left: 5%;
+   top: 7%;
+   height: 90%;
+   width: 92%;
+   overflow: auto;
+   transition: all .2s;
+   color: #fff;
+   font-size: 20px;
+   overflow: hidden;
+}
+#text:hover {
+   opacity: 1;
+}
+#text2 {
+   text-align: center;
+   position: absolute;
+   opacity: 0.01;
+   left: 7%;
+   top: 7%;
+   height: 90%;
+   width: 90%;
+   overflow: auto;
+   transition: all 1s;
+   color: #fff;
+   font-size: 20px;
+   overflow:  hidden;
+}
+#text2:hover {
+   opacity: 1;
+}
+#header {
+   position: absolute;
+   top:0px;
+   left: 0px;
+   right: 0px;
+   height: 12%;
+   z-index: 6;
+   background: url("https://i.imgur.com/onBejZ0.png");
+   background-size: cover;
+   border-bottom: 16px solid;
+   border-image: url(https://i.imgur.com/zkYzXXX.png) 30 stretch;
+   padding-left: 5px;
+   padding-top: 5px;
+}
+#headerimage {
+   position: absolute;
+   background: url("https://i.imgur.com/tRqBbgM.png");
+   top: 2%;
+   left: 0px;
+   width:  100%;
+   height:  80px;
+   background-repeat:no-repeat;
+   z-index: 7;
+   transition: all 1s;
+}
+#headerimage:hover {
+   background: url("https://i.imgur.com/tRqBbgM.png");
+   background-repeat:no-repeat;
+}
+#navi {
+   position: absolute;
+   top:0px;
+   right: 20px;
+   height: 50px;
+   width: 100px;
+   z-index: 7;
+   background: url("https://i.imgur.com/jkFgyyc.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   border: 6px solid;
+   border-top: 0px solid;
+   border-bottom: 16px solid;
+   border-color: #5a5e33;
+   background-position: top;
+   transition: all .7s;
+   overflow: hidden;
+   text-align: center;
+   opacity: .3;
+}
+#navi:hover {
+   height: 300px;
+   right: 15px;
+   width: 150px;
+   background: url("https://i.imgur.com/9EqhQoI.png");
+   background-position: top;
+   border-top: 0px solid;
+   border-left: 3px solid;
+   border-right: 3px solid;
+   border-bottom: 30px solid;
+   border-color: #6e1524;
+   overflow: hidden;
+   opacity: 1;
+}
+#navi1 {
+   background-color: #bb3137;
+   color: #FFF;
+   font-size: 25px;
+   height: 30px;
+   transition: all .7s;
+   border-top: 10px solid;
+   border-bottom: 5px solid;
+   border-color: #82191d;
+   opacity: .4;
+}
+#navi1:hover {
+   background-color: #5c1013;
+   border-top: 10px solid;
+   border-bottom: 5px solid;
+   border-color: #82191d;
+   color: #FFF;
+   opacity: 1;
+   font-style: italic;
+}
+#navi2 {
+   background-color: #5c1013;
+   color: #e54a50;
+   font-size: 25px;
+   height: 30px;
+   transition: all .7s;
+   border-top: 10px solid;
+   border-bottom: 5px solid;
+   border-color: #82191d;
+   font-style: italic;
+}
+#bottom {
+   position: absolute;
+   right: 0px;
+   left: 0px;
+   bottom: 0px;
+   height: 25px;
+   z-index: 6;
+   padding-left: 10px;
+   background: url("https://i.imgur.com/zkYzXXX.png");
+   border-top: 8px solid;
+   border-image: url(https://i.imgur.com/onBejZ0.png) 30 stretch;
+   color: #912c37;
+}
+#link1 {
+   position: relative;
+   width: 60%;
+   height: 60px;
+   transition: all .3s;
+   z-index: 2;
+   border-radius: 4px 4px 4px 4px;;
+   text-align: center;
+   font-size: 30px;
+   color: #FFF;
+   padding-top: 15pt;
+   border: 3px solid;
+   border-color: #fff;
+   opacity: .7;
+   margin: auto;
+}
+#link11:hover {
+   left:  12%;
+   width: 70%;
+   background-color: #442a54;
+   height: 40px;
+   font-style: italic;
+   font-size: 30px;
+}
+#link2 {
+   position: absolute;
+   width: 60%;
+   top: 1%;
+   left: 15%;
+   height: 30px;
+   background-color: #31268b;
+   transition: all .3s;
+   z-index: 2;
+   border-radius: 100px 100px 100px 100px;;
+   text-align: center;
+   font-size: 20px;
+   color: #FFF;
+}
+#link2:hover {
+   left:  12%;
+   width: 70%;
+   background-color: #666d29;
+   height: 40px;
+   font-style: italic;
+   font-size: 30px;
+}
+#link3 {
+   position: absolute;
+   width: 60%;
+   top: 1%;
+   left: 15%;
+   height: 30px;
+   background-color: #a39244;
+   transition: all .3s;
+   z-index: 2;
+   border-radius: 100px 100px 100px 100px;;
+   text-align: center;
+   font-size: 20px;
+   color: #FFF;
+}
+#link3:hover {
+   left:  12%;
+   width: 70%;
+   background-color: #226855;
+   height: 40px;
+   font-style: italic;
+   font-size: 30px;
+}
+#link4 {
+   position: absolute;
+   width: 60%;
+   top: 1%;
+   left: 15%;
+   height: 30px;
+   background-color: #8eab3e;
+   transition: all .3s;
+   z-index: 2;
+   border-radius: 100px 100px 100px 100px;;
+   text-align: center;
+   font-size: 20px;
+   color: #FFF;
+}
+#link4:hover {
+   left:  12%;
+   width: 70%;
+   background-color: #5a5e33;
+   height: 40px;
+   font-style: italic;
+   font-size: 30px;
+}
+a {
+  color: #b1999c;
+  text-decoration: none; /* no underline */
+}
+a:hover {
+   color: #FFF;
+   text-decoration: underline;
+}
+</style>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+<title>  Caleb's Portfolio</title>
+<link rel="icon" href="https://i.imgur.com/41646Vk.jpg"><div id="headerimage"></div>
+<div id="header" title="Welcome!"></div>
+<div id="navi"><br><br><br>
+
+   <div id="navi2"> Home</div>
+   <a href="character_art.html" target="_self"><div id="navi1"> Character Art</div></a>
+   <a href="conceptual.html" target="_self"><div id="navi1"> Conceptual</div></a>
+   <a href="diversity.html" target="_self"><div id="navi1"> Diversity</div></a>
+   <a href="about.html" target="_self"><div id="navi1"> About</div></a><br>
+
+</div>
+
+<div id="bottom">All images, design, and coding created by Caleb Nguyen unless otherwise stated.</div>
+
+<a href="character_art.html"><div id="one"><div id="text"><div id="link1">[Character Art]</div>
+<br><br>
+<img src="https://i.imgur.com/TVaVT0O.jpg" width="70%" style="border-radius: 400px 400px 400px 400px; border: 2pt solid #FFF;"><br><br>"Friend to the Flames"
+</div></div></a>
+
+<div id="two"><a href="conceptual.html"><div id="text2"><div id="link1">[Conceptual]</div></a><br><br>
+<img src="https://i.imgur.com/tbPW8Q7.png" width="70%" style="border-radius: 400px 400px 400px 400px; border: 2pt solid #FFF;"><br><br>"Moments of Control"</div></div>
+
+<div id="three"><a href="diversity.html"><div id="text2"><div id="link1">[Diversity]</div>
+<br><br>
+<img src="https://i.imgur.com/kkQeMdn.png" width="70%" style="border-radius: 400px 400px 400px 400px; border: 2pt solid #FFF;"><br><br>"A Real Boy"</div></div>
+
+<div id="four"><a href="about.html"><div id="text"><div id="link1">[About]</div>
+<br><br>
+<img src="https://i.imgur.com/z78Mif4.png" width="70%" style="border-radius: 400px 400px 400px 400px; border: 2pt solid #FFF;"><br><br>"The Staircase"</div> </div>

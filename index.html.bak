@@ -1,0 +1,96 @@
+<!DOCTYPE  html>
+<html>
+    <head>
+        <title>  Caleb's Portfolio</title>
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+        <link href='index.css' rel='stylesheet'>
+        <link rel="icon" href="https://i.imgur.com/41646Vk.jpg">
+    </head>
+    <body>
+        <div id="headerimage"></div>
+        <div id="header" title="Welcome!"></div>
+        <div id="navi"><br><br><br>
+
+            <div id="navi2"> Home</div>
+            <a href="character_art.html" target="_self"><div id="navi1"> Character Art</div></a>
+            <a href="conceptual.html" target="_self"><div id="navi1"> Conceptual</div></a>
+            <a href="diversity.html" target="_self"><div id="navi1"> Diversity</div></a>
+            <a href="about.html" target="_self"><div id="navi1"> About</div></a><br>
+
+        </div>
+        
+        <div id="bottom">All images, design, and coding created by Caleb Nguyen unless otherwise stated.</div>
+        
+        <div id="one" class="module" onclick="navigate('character_art.html')">
+            <div id="text"><a href="character_art.html"><div id="link1">[ Character Art ]</div></a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar ante auctor tellus posuere, eget varius quam eleifend. Aliquam erat volutpat.
+                    Integer ornare nisi et congue tincidunt. Curabitur euismod et felis quis vehicula. Etiam rutrum felis quis ante eleifend egestas.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nibh ex, interdum a
+                    sagittis id, commodo eu magna. Praesent luctus bibendum dolor, et tempor arcu scelerisque id. Mauris sit amet vestibulum turpis.
+                </p>
+                <p>
+                    Ut ut elementum dolor, et semper massa. Duis sapien leo, pulvinar eu tortor eu, porttitor commodo sapien. Ut auctor vestibulum velit,
+                    nec volutpat eros luctus ut. Aliquam tellus ante, hendrerit a consectetur ut, suscipit vel nibh. Sed lectus erat, pellentesque sit amet erat et,
+                    dictum pellentesque nisi. Nullam rhoncus mi vel mattis maximus. Nam vel ex rutrum, gravida nulla ut, porttitor neque. Vivamus mi nunc,
+                    imperdiet quis auctor vel, pharetra eu neque. Quisque in lacus cursus mauris aliquet commodo consectetur ac odio. Vestibulum sit amet tincidunt lectus,
+                    in laoreet sapien. Aenean ultrices pretium neque, ut tempus sapien interdum ut. In rutrum lorem dui. Mauris nec cursus lectus.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div id="two" class="module" onclick="navigate('conceptual.html')">
+            <a href="conceptual.html"><div id="text2"><div id="link2">[ Conceptual ]</div></a>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar ante auctor tellus posuere, eget varius quam eleifend. Aliquam erat volutpat.
+                Integer ornare nisi et congue tincidunt. Curabitur euismod et felis quis vehicula. Etiam rutrum felis quis ante eleifend egestas.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nibh ex, interdum a
+                sagittis id, commodo eu magna. Praesent luctus bibendum dolor, et tempor arcu scelerisque id. Mauris sit amet vestibulum turpis.
+            </p>
+            <p>
+                Ut ut elementum dolor, et semper massa. Duis sapien leo, pulvinar eu tortor eu, porttitor commodo sapien. Ut auctor vestibulum velit,
+                nec volutpat eros luctus ut. Aliquam tellus ante, hendrerit a consectetur ut, suscipit vel nibh. Sed lectus erat, pellentesque sit amet erat et,
+                dictum pellentesque nisi. Nullam rhoncus mi vel mattis maximus. Nam vel ex rutrum, gravida nulla ut, porttitor neque. Vivamus mi nunc,
+                imperdiet quis auctor vel, pharetra eu neque. Quisque in lacus cursus mauris aliquet commodo consectetur ac odio. Vestibulum sit amet tincidunt lectus,
+                in laoreet sapien. Aenean ultrices pretium neque, ut tempus sapien interdum ut. In rutrum lorem dui. Mauris nec cursus lectus.
+            </p>
+        </div>
+        
+        <div id="three" class="module" onclick="navigate('diversity.html')">
+            <a href="diversity.html"><div id="text2"><div id="link3">[ Diversity ]</div></a>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar ante auctor tellus posuere, eget varius quam eleifend. Aliquam erat volutpat.
+                Integer ornare nisi et congue tincidunt. Curabitur euismod et felis quis vehicula. Etiam rutrum felis quis ante eleifend egestas.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nibh ex, interdum a
+                sagittis id, commodo eu magna. Praesent luctus bibendum dolor, et tempor arcu scelerisque id. Mauris sit amet vestibulum turpis.
+            </p>
+            <p>
+                Ut ut elementum dolor, et semper massa. Duis sapien leo, pulvinar eu tortor eu, porttitor commodo sapien. Ut auctor vestibulum velit,
+                nec volutpat eros luctus ut. Aliquam tellus ante, hendrerit a consectetur ut, suscipit vel nibh. Sed lectus erat, pellentesque sit amet erat et,
+                dictum pellentesque nisi. Nullam rhoncus mi vel mattis maximus. Nam vel ex rutrum, gravida nulla ut, porttitor neque. Vivamus mi nunc,
+                imperdiet quis auctor vel, pharetra eu neque. Quisque in lacus cursus mauris aliquet commodo consectetur ac odio. Vestibulum sit amet tincidunt lectus,
+                in laoreet sapien. Aenean ultrices pretium neque, ut tempus sapien interdum ut. In rutrum lorem dui. Mauris nec cursus lectus.
+            </p>
+        </div>
+        
+        <div id="four" onclick="navigate('about.html')">
+            <a href="about.html"><div id="text"><div id="link4">[ About ]</div></a>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar ante auctor tellus posuere, eget varius quam eleifend. Aliquam erat volutpat.
+                Integer ornare nisi et congue tincidunt. Curabitur euismod et felis quis vehicula. Etiam rutrum felis quis ante eleifend egestas.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nibh ex, interdum a
+                sagittis id, commodo eu magna. Praesent luctus bibendum dolor, et tempor arcu scelerisque id. Mauris sit amet vestibulum turpis.
+            </p>
+            <p>
+                Ut ut elementum dolor, et semper massa. Duis sapien leo, pulvinar eu tortor eu, porttitor commodo sapien. Ut auctor vestibulum velit,
+                nec volutpat eros luctus ut. Aliquam tellus ante, hendrerit a consectetur ut, suscipit vel nibh. Sed lectus erat, pellentesque sit amet erat et,
+                dictum pellentesque nisi. Nullam rhoncus mi vel mattis maximus. Nam vel ex rutrum, gravida nulla ut, porttitor neque. Vivamus mi nunc,
+                imperdiet quis auctor vel, pharetra eu neque. Quisque in lacus cursus mauris aliquet commodo consectetur ac odio. Vestibulum sit amet tincidunt lectus,
+                in laoreet sapien. Aenean ultrices pretium neque, ut tempus sapien interdum ut. In rutrum lorem dui. Mauris nec cursus lectus.
+            </p>
+        </div>
+    </body>
+
+</html>
+    
