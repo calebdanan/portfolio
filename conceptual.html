@@ -1,10 +1,11 @@
 <!DOCTYPE  html>
 <html>
     <head>
-        <title> Character Art</title>
+        <title> Conceptual</title>
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
         <link href='assets/css/page.css' rel='stylesheet'>
         <link href='assets/imageGallery/imageGallery.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/material-icons/material-icons.css">
         <link rel="icon" href="https://i.imgur.com/41646Vk.jpg">
         <style>
             #one {
@@ -13,6 +14,26 @@
         </style>
     </head>
     <body>
+        <!-- Image Viewer-->
+        <div id="viewer-bg" onclick="closeimageviewer()"></div>
+        <div id="image-gallery-viewer">
+            <div id="overlay">
+                <div id="overlay-previous" onclick="loadPreviousImage()"></div>
+                <div id="overlay-next" onclick="loadNextImage()"></div>
+            </div>
+            <div id="previous" onclick="loadPreviousImage()"><span class="material-icons">navigate_before</span></div>
+            <div id="next" onclick="loadNextImage()"><span class="material-icons">navigate_next</span></div>
+            <div class="close" onclick="closeimageviewer()"><span class="material-icons">close</span></div>
+            <img id="viewing-image" />
+            <div id="gallery-info">
+                <p id="gallery-title"></p>
+            </div>
+            <div id="image-details">
+                <p id="image-title"></p>
+                <p id="image-description"></p>
+            </div>
+        </div>
+        <!-- / Image Viewer-->
         <a href="index.html"><div id="headerimage"></div><div id="header" title="Welcome!"></div></a>
         <div id="headerfloat"></div>
         <a href="index.html"><div id="headerimagefloat"></div></a>
@@ -42,56 +63,60 @@
             </div>
             
             <div class="img-gallery-b center">
-                <img src="https://i.imgur.com/A1yq2Zt.jpg" /> <img src="https://i.imgur.com/NtJNcab.jpg" /> <img src="https://i.imgur.com/plssTNs.jpg" />
+                <img src="https://i.imgur.com/A1yq2Zt.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/NtJNcab.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/plssTNs.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
             </div>
             
             <iframe src="https://albumizr.com/a/ioY1" scrolling="no" frameborder="0" allowfullscreen width="100%" height="800"></iframe>
             <br><br>
 
             <div class="img-gallery-b center">
-                <img src="https://i.imgur.com/OhJsvpB.jpg" /> <img src="https://i.imgur.com/7Nq5voA.jpg" /> <img src="https://i.imgur.com/lxAfwGX.jpg" />
+                <img src="https://i.imgur.com/OhJsvpB.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/7Nq5voA.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" /> 
+                <img src="https://i.imgur.com/lxAfwGX.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
             </div>
 
             <div class="img-gallery-a center">
-                <img src="https://i.imgur.com/f52lctA.jpg" />
-                <img src="https://i.imgur.com/M4GPMdM.jpg" />
-                <img src="https://i.imgur.com/3Zko7SH.jpg" />
-                <img src="https://i.imgur.com/ZqqwTdw.jpg" />
-                <img src="https://i.imgur.com/TGsjV8p.jpg" />
-                <img src="https://i.imgur.com/9URVoMO.jpg" />
-                <img src="https://i.imgur.com/fRNycOS.jpg" />
-                <img src="https://i.imgur.com/eBuZBid.jpg" />
-                <img src="https://i.imgur.com/XCOcm6y.jpg" />
-                <img src="https://i.imgur.com/2tF9HRM.png" />
-                <img src="https://i.imgur.com/DA139YP.jpg" />
-                <img src="https://i.imgur.com/GapB0yc.jpg" />
-                <img src="https://i.imgur.com/KE536qD.jpg" />
-                <img src="https://i.imgur.com/YKYJlPk.jpg" />
-                <img src="https://i.imgur.com/C5TOW7V.jpg" />
-                <img src="https://i.imgur.com/e5drryK.jpg" />
-                <img src="https://i.imgur.com/06ROHIe.png" />
-                <img src="https://i.imgur.com/fZ8lw3a.png" />
-                <img src="https://i.imgur.com/pRmIll1.jpg" />
+                <img src="https://i.imgur.com/f52lctA.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/M4GPMdM.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/3Zko7SH.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/ZqqwTdw.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/TGsjV8p.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/9URVoMO.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/fRNycOS.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/eBuZBid.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/XCOcm6y.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/2tF9HRM.png" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/DA139YP.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/GapB0yc.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/KE536qD.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/YKYJlPk.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/C5TOW7V.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/e5drryK.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/06ROHIe.png" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/fZ8lw3a.png" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/pRmIll1.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
             </div>
             
             <div class="img-gallery-b center">
-                <img src="https://i.imgur.com/lLG5bfM.jpg" />
-                <img src="https://i.imgur.com/ICVUU4d.jpg" />
-                <img src="https://i.imgur.com/mhMdjfg.jpg" />
-                <img src="https://i.imgur.com/XIPDMjM.jpg" />
-                <img src="https://i.imgur.com/401wuIO.jpg" />
-                <img src="https://i.imgur.com/2we9eh3.jpg" />
+                <img src="https://i.imgur.com/lLG5bfM.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/ICVUU4d.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/mhMdjfg.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/XIPDMjM.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/401wuIO.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                <img src="https://i.imgur.com/2we9eh3.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
             </div>
                 
             <div class="img-gallery-c center">
-                <img src="https://i.imgur.com/tZP3JRt.jpg" width="24%">
-                <img src="https://i.imgur.com/TxzPomh.jpg" width="24%">
-                <img src="https://i.imgur.com/pjMpxOy.jpg" width="24%">
-                <img src="https://i.imgur.com/oBkmAEl.jpg" width="24%">
-                <img src="https://i.imgur.com/6Ipj6iY.jpg" width="24%">
-                <img src="https://i.imgur.com/RxxR8xU.jpg" width="24%">
-                <img src="https://i.imgur.com/X89HU0l.jpg" width="24%">
-                <img src="https://i.imgur.com/fN9coFJ.jpg" width="24%">
+                <img src="https://i.imgur.com/tZP3JRt.jpg" width="24%" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description">
+                <img src="https://i.imgur.com/TxzPomh.jpg" width="24%" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description">
+                <img src="https://i.imgur.com/pjMpxOy.jpg" width="24%" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description">
+                <img src="https://i.imgur.com/oBkmAEl.jpg" width="24%" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description">
+                <img src="https://i.imgur.com/6Ipj6iY.jpg" width="24%" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description">
+                <img src="https://i.imgur.com/RxxR8xU.jpg" width="24%" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description">
+                <img src="https://i.imgur.com/X89HU0l.jpg" width="24%" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description">
+                <img src="https://i.imgur.com/fN9coFJ.jpg" width="24%" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description">
             </div>
         </div>
         
