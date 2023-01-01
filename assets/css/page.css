@@ -1,6 +1,7 @@
 body {
     background-color: #848484;
     background: url("https://i.imgur.com/jziexPv.png");
+    font-size: 15pt;
  }
  table {
    width: 100%;
@@ -215,7 +216,7 @@ div.a {
     margin-right: auto;
  }
  .blocktext2 {
-   width: 100%;
+   width: 80%;
    height: auto;
    padding: 10px;
    float:right; 
