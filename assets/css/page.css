@@ -10,11 +10,16 @@ body {
   background: none;
   padding: 0rem;
   outline: none;
+  margin: 0 auto;
 }
+table.table2 {
+   outline: 1px solid #ffffff;
+ }
 table {
    margin: 0 auto;
    outline: 2px solid #dcdcdc;
    outline-offset: -2px;
+   font-size: 1vw;
  }
  table td {
    padding: 1rem;
@@ -116,7 +121,7 @@ div.a {
  #headermedium {
     position: absolute;
     color: #FFF;
-    font-size: 25pt;
+    font-size: 3vw;
     text-align: center;
     top: 80px;
     left: 0px;
