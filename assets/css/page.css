@@ -1,19 +1,25 @@
 body {
     background-color: #848484;
     background: url("https://i.imgur.com/jziexPv.png");
-    font-size: 15pt;
+    font-size: 13pt;
  }
- table {
-   width: 100%;
- }
- td2 {
-  border:1px solid black;
+
+ table.table2 td {
+  border:none;
   padding:15px;
-  background: gray;
+  background: none;
+  padding: 0rem;
+  outline: none;
 }
-table, th {
-border: none;
-}
+table {
+   margin: 0 auto;
+   outline: 2px solid #dcdcdc;
+   outline-offset: -2px;
+ }
+ table td {
+   padding: 1rem;
+   outline: 2px solid #a9a3a3;
+ }
 /* indent */
 div.a {
   text-indent: 50px;
@@ -228,7 +234,7 @@ div.a {
    background-image: url('css_images/background_tree.jpg');
    background-size: 100%;
    color: #2b2b2b;
-   filter: drop-shadow(2px 5px 5px #1c1c1c);
+   filter: drop-shadow(2px 10px 15px #333333);
 }
 .blocktext3 {
    width: 60%;
