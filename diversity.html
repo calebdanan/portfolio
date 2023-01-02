@@ -5,6 +5,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
         <link href='assets/css/page.css' rel='stylesheet'>
         <link href='assets/imageGallery/imageGallery.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/material-icons/material-icons.css">
         <link rel="icon" href="https://i.imgur.com/A3QKtcL.png">
         <style>
             #one {
@@ -15,23 +16,23 @@
     <body>
     <!-- Image Viewer-->
     <div id="viewer-bg" onclick="closeimageviewer()"></div>
-    <div id="image-gallery-viewer">
-        <div id="overlay">
-            <div id="overlay-previous" onclick="loadPreviousImage()"></div>
-            <div id="overlay-next" onclick="loadNextImage()"></div>
+        <div id="image-gallery-viewer">
+            <div id="overlay">
+                <div id="overlay-previous" onclick="loadPreviousImage()"></div>
+                <div id="overlay-next" onclick="loadNextImage()"></div>
+            </div>
+            <div id="previous" onclick="loadPreviousImage()"><span class="material-icons">navigate_before</span></div>
+            <div id="next" onclick="loadNextImage()"><span class="material-icons">navigate_next</span></div>
+            <div class="close" onclick="closeimageviewer()"><span class="material-icons">close</span></div>
+            <img id="viewing-image" />
+            <div id="gallery-info">
+                <p id="gallery-title"></p>
+            </div>
+            <div id="image-details">
+                <p id="image-title"></p>
+                <p id="image-description"></p>
+            </div>
         </div>
-        <div id="previous" onclick="loadPreviousImage()"><span class="material-icons">navigate_before</span></div>
-        <div id="next" onclick="loadNextImage()"><span class="material-icons">navigate_next</span></div>
-        <div class="close" onclick="closeimageviewer()"><span class="material-icons">close</span></div>
-        <img id="viewing-image" />
-        <div id="gallery-info">
-            <p id="gallery-title"></p>
-        </div>
-        <div id="image-details">
-            <p id="image-title"></p>
-            <p id="image-description"></p>
-        </div>
-    </div>
     <!-- / Image Viewer-->
         <a href="index.html"><div id="headerimage"></div><div id="header" title="Welcome!"></div></a>
         <div id="headerfloat"></div>
@@ -64,21 +65,28 @@
                 Work in Progress<br> 
             </i>
             </div>
-            <p align="center">
-                <iframe src="https://drive.google.com/file/d/1rPsXnpDyP-FHtjAHfP1X4LKt9g6Fy3za/preview" width="100%" height="480" allow="autoplay"></iframe></p>
-                <div class="img-gallery-d center" data-gallery-title="My First Character Gallery">
-                    <img src="https://i.imgur.com/Cj8sfV2.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
-                    <img src="https://i.imgur.com/ytqYZ0h.jpg" onclick="openimageviewer(this)" data-title="Image 2" data-description="Image 2 desc" />
-                    <img src="https://i.imgur.com/V1H3sEG.jpg" onclick="openimageviewer(this)" data-title="This is an example of a longer title" data-description="This is also an example of a pretty long description, I think you can see that the space available expands to your needs" />
-                    <img src="https://i.imgur.com/2DbuHor.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                    <img src="https://i.imgur.com/5cUYh9y.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                    <img src="https://i.imgur.com/lgF07hc.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                    <img src="https://i.imgur.com/XzolN34.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                    <img src="https://i.imgur.com/sQKlhyW.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                </div>
-                
-            <br><br></div>
-        </div>
+            <h1>3D Modeling and Animation</h1><table style="width:100%" p align="center"  class="table2">
+                    <th style="width:40%;"><br><br>
+                            <iframe src="https://drive.google.com/file/d/1rPsXnpDyP-FHtjAHfP1X4LKt9g6Fy3za/preview" width="90%" height="460vw" allow="autoplay"></iframe><div style="height: 3vw;"></div>
+                            </th>
+                            <td>
+                            <table p align="center"><p align="left"></p>
+                                <tr>
+                                    <div class="img-gallery-e center" data-gallery-title="My First Character Gallery">
+                                        <img src="assets/images/art/3d/3d_chess.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" height="200"/>
+                                        <img src="assets/images/art/3d/3d_duolingo.png" onclick="openimageviewer(this)" data-title="Image 2" data-description="Image 2 desc" />
+                                        <img src="assets/images/art/3d/3d_face.jpg" onclick="openimageviewer(this)" data-title="This is an example of a longer title" data-description="This is also an example of a pretty long description, I think you can see that the space available expands to your needs" />
+                                        <img src="assets/images/art/3d/3d_green_face.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                                        <img src="assets/images/art/3d/3d_grey.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                                        <img src="assets/images/art/3d/3d_leg.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                                        <img src="assets/images/art/3d/3d_room.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                                        <img src="assets/images/art/3d/animation_tree.gif" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                                    </div>
+                                </td></table></tr><br><br></table>
+            <h1>Videogame: ROADS</h1><br><br>
+            <h1>Traditional Art</h1>
+            <h1>Digital Art</h1>
+            <br><br><div style="height: 10vw;"></div>
         
     </body>
     <script src="assets/imageGallery/imageGallery.js"></script>

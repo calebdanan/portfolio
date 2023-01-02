@@ -112,6 +112,14 @@
 .img-gallery-d img {
    width: 20%;
 }
+.img-gallery-e, .img-gallery-b, .img-gallery-c, .img-gallery-d {
+    margin-bottom: 25px;
+}
+.img-gallery-e img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
 .center {
    text-align: center;
 }
