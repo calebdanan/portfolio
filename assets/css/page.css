@@ -312,6 +312,20 @@ div.a {
    margin-left: auto;
    margin-right: auto;
 }
+.blocktext5 {
+   width: 95%;
+   height: auto;
+   padding: 5px;
+   border-radius: 15px;
+   border: 1pt solid #a1a1a1;
+   margin: 0 auto;
+   background-color: #c8c8c8;
+   color: #2b2b2b;
+   margin-bottom: 35px;
+   filter: drop-shadow(2px 5px 10px #696969);
+   margin-left: auto;
+   margin-right: auto;
+}
  a {
    color: #b1999c;
    text-decoration: none; /* no underline */
