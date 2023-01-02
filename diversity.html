@@ -13,6 +13,26 @@
         </style>
     </head>
     <body>
+    <!-- Image Viewer-->
+    <div id="viewer-bg" onclick="closeimageviewer()"></div>
+    <div id="image-gallery-viewer">
+        <div id="overlay">
+            <div id="overlay-previous" onclick="loadPreviousImage()"></div>
+            <div id="overlay-next" onclick="loadNextImage()"></div>
+        </div>
+        <div id="previous" onclick="loadPreviousImage()"><span class="material-icons">navigate_before</span></div>
+        <div id="next" onclick="loadNextImage()"><span class="material-icons">navigate_next</span></div>
+        <div class="close" onclick="closeimageviewer()"><span class="material-icons">close</span></div>
+        <img id="viewing-image" />
+        <div id="gallery-info">
+            <p id="gallery-title"></p>
+        </div>
+        <div id="image-details">
+            <p id="image-title"></p>
+            <p id="image-description"></p>
+        </div>
+    </div>
+    <!-- / Image Viewer-->
         <a href="index.html"><div id="headerimage"></div><div id="header" title="Welcome!"></div></a>
         <div id="headerfloat"></div>
         <a href="index.html"><div id="headerimagefloat"></div></a>
@@ -32,25 +52,31 @@
             </div>
 
         <div id="bodytext">
-            <div id="headermedium">
+            <div id="headermediumTree"><div id="headermediumTreeInner">
                 <a href="index.html" target="_self">Home</a> | <a href="character_art.html" target="_self">Character Art</a>
-                | <a href="conceptual.html" target="_self">Conceptual</a> | <b>Diversity</b> | <a href="about.html" target="_self">About</a>
-            </div>
-
-            <div class="blocktext">
+                | <a href="conceptual.html" target="_self">Conceptual</a> | <b>Diversity</b> | <a href="about.html" target="_self">About</a></div>
+                </div>
+            <div style="height: 11vw;"></div><div class="blocktext4">Sub-categories: 3D Art, Game, Traditional Art, Digital Art</div>
+            <div class="blocktext4">
                 <b>A wide variety of pieces and different mediums.</b> This includes 3D animations, modeled and rigged; cel-shading; graphic design mockups and posters;
                 traditional art done with graphite, Conte, acrylic, oilpaint; and lastly a demo game, coded with javascript and illustrated game design. <br><br>
-                There are many ways of producing art, and each new medium is studied and learned with intention and excitement.
+                There are many ways of producing art, and each new medium is studied and learned with intention and excitement. This page is very much a work in progress. Please be patient while I organize my brain enough to organize this page and its many topics!<br>Sub categories: 3D animation, traditional art, digital paintings, cel-shading, graphic design. 
+                Work in Progress<br> 
             </i>
-            </div>This page is very much a work in progress. Please be patient while I organize my brain enough to organize this page and its many topics!<br>Sub categories: 3D animation, traditional art, digital paintings, cel-shading, graphic design
-            
+            </div>
             <p align="center">
                 <iframe src="https://drive.google.com/file/d/1rPsXnpDyP-FHtjAHfP1X4LKt9g6Fy3za/preview" width="100%" height="480" allow="autoplay"></iframe></p>
-            
-
-                Work in Progress<br>
-                <img src="assets/images/animation_tree.gif" width="100%"/>
-
+                <div class="img-gallery-d center" data-gallery-title="My First Character Gallery">
+                    <img src="https://i.imgur.com/Cj8sfV2.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" />
+                    <img src="https://i.imgur.com/ytqYZ0h.jpg" onclick="openimageviewer(this)" data-title="Image 2" data-description="Image 2 desc" />
+                    <img src="https://i.imgur.com/V1H3sEG.jpg" onclick="openimageviewer(this)" data-title="This is an example of a longer title" data-description="This is also an example of a pretty long description, I think you can see that the space available expands to your needs" />
+                    <img src="https://i.imgur.com/2DbuHor.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                    <img src="https://i.imgur.com/5cUYh9y.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                    <img src="https://i.imgur.com/lgF07hc.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                    <img src="https://i.imgur.com/XzolN34.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                    <img src="https://i.imgur.com/sQKlhyW.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                </div>
+                
             <br><br></div>
         </div>
         
