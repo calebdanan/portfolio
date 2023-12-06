@@ -1,166 +1,266 @@
-<!DOCTYPE  html>
+<!DOCTYPE html>
 <html>
-    
-    <head>
-        <title> Diversity</title>
-        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-        <link href='assets/css/page.css' rel='stylesheet'>
-        <link href='assets/imageGallery/imageGallery.css' rel='stylesheet'>
-        <link rel="stylesheet" href="assets/material-icons/material-icons.css">
-        <link rel="icon" href="https://i.imgur.com/A3QKtcL.png">
-        <style>
-            #one {
-               background: url("https://i.imgur.com/A3QKtcL.png");
-            }
-        </style>
-    </head>
-    <body>
+
+<head>
+    <title> Diversity</title>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='assets/css/page.css' rel='stylesheet'>
+    <link href='assets/imageGallery/imageGallery.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/material-icons/material-icons.css">
+    <link rel="icon" href="https://i.imgur.com/A3QKtcL.png">
+    <style>
+        #one {
+            background: url("https://i.imgur.com/A3QKtcL.png");
+        }
+    </style>
+</head>
+
+<body>
     <!-- Image Viewer-->
     <div id="viewer-bg" onclick="closeimageviewer()"></div>
-        <div id="image-gallery-viewer">
-            <div id="overlay">
-                <div id="overlay-previous" onclick="loadPreviousImage()"></div>
-                <div id="overlay-next" onclick="loadNextImage()"></div>
-            </div>
-            <div id="previous" onclick="loadPreviousImage()"><span class="material-icons">navigate_before</span></div>
-            <div id="next" onclick="loadNextImage()"><span class="material-icons">navigate_next</span></div>
-            <div class="close" onclick="closeimageviewer()"><span class="material-icons">close</span></div>
-            <img id="viewing-image" />
-            <div id="gallery-info">
-                <p id="gallery-title"></p>
-            </div>
-            <div id="image-details">
-                <p id="image-title"></p>
-                <p id="image-description"></p>
-            </div>
+    <div id="image-gallery-viewer">
+        <div id="overlay">
+            <div id="overlay-previous" onclick="loadPreviousImage()"></div>
+            <div id="overlay-next" onclick="loadNextImage()"></div>
         </div>
+        <div id="previous" onclick="loadPreviousImage()"><span class="material-icons">navigate_before</span></div>
+        <div id="next" onclick="loadNextImage()"><span class="material-icons">navigate_next</span></div>
+        <div class="close" onclick="closeimageviewer()"><span class="material-icons">close</span></div>
+        <img id="viewing-image" />
+        <div id="gallery-info">
+            <p id="gallery-title"></p>
+        </div>
+        <div id="image-details">
+            <p id="image-title"></p>
+            <p id="image-description"></p>
+        </div>
+    </div>
     <!-- / Image Viewer-->
-        <a href="index.html"><div id="headerimage"></div><div id="header" title="Welcome!"></div></a>
-        <div id="headerfloat"></div>
-        <a href="index.html"><div id="headerimagefloat"></div></a>
-        
-        <div id="navi"><br><br><br>
-            <a href="index.html" target="_self"><div id="navi1"> Home</div></a>
-            <a href="character_art.html" target="_self"><div id="navi1"> Character Art</div></a>
-            <div id="navi1"> Conceptual</div>
-            <a href="diversity.html" target="_self"><div id="navi1"> Diversity</div></a>
-            <a href="about.html" target="_self"><div id="navi1"> About</div></a><br>
-        </div>
-        <div id="bottom"> 
-            All images, design, and coding created by Caleb Nguyen unless otherwise stated.
-        </div>
-        <div id="one"><br><br>
-            </div>
+    <a href="index.html">
+        <div id="headerimage"></div>
+        <div id="header" title="Welcome!"></div>
+    </a>
+    <div id="headerfloat"></div>
+    <a href="index.html">
+        <div id="headerimagefloat"></div>
+    </a>
 
-        <div id="bodytext">
-            <div id="headermediumTree"><div id="headermediumTreeInner">
-                <a href="index.html" target="_self">Home</a> | <a href="character_art.html" target="_self">Character Art</a>
-                | <a href="conceptual.html" target="_self">Conceptual</a> | <b>Diversity</b> | <a href="about.html" target="_self">About</a></div>
-                </div>
-            <div style="height: 13vw;"></div><div class="blocktext4">Sub-categories: 3D Art, Game, Traditional Art, Digital Art</div>
-            <div class="blocktext4">
-                <b>AAAAAAAAAAA  A AA A wide variety of pieces and different mediums.</b> This includes 3D animations, modeled and rigged; cel-shading; graphic design mockups and posters;
-                traditional art done with graphite, Conte, acrylic, oilpaint; and lastly a demo game, coded with javascript and illustrated game design. <br><br>
-                There are many ways of producing art, and each new medium is studied and learned with intention and excitement.<br> 
+    <div id="navi"><br><br><br>
+        <a href="index.html" target="_self">
+            <div id="navi1"> Home</div>
+        </a>
+        <a href="character_art.html" target="_self">
+            <div id="navi1"> Character Art</div>
+        </a>
+        <div id="navi1"> Conceptual</div>
+        <a href="diversity.html" target="_self">
+            <div id="navi1"> Diversity</div>
+        </a>
+        <a href="about.html" target="_self">
+            <div id="navi1"> About</div>
+        </a><br>
+    </div>
+    <div id="bottom">
+        All images, design, and coding created by Caleb Nguyen unless otherwise stated.
+    </div>
+    <div id="one"><br><br>
+    </div>
+
+    <div id="bodytext">
+        <div id="headermediumTree">
+            <div id="headermediumTreeInner">
+                <a href="index.html" target="_self">Home</a> | <a href="character_art.html" target="_self">Character
+                    Art</a>
+                | <a href="conceptual.html" target="_self">Conceptual</a> | <b>Diversity</b> | <a href="about.html"
+                    target="_self">About</a>
+            </div>
+        </div>
+        <div style="height: 13vw;"></div>
+        <div class="blocktext4">Sub-categories: 3D Art, Game, Traditional Art, Digital Art</div>
+        <div class="blocktext4">
+            <b>AAAAAAAAAAA A AA A wide variety of pieces and different mediums.</b> This includes 3D animations, modeled
+            and rigged; cel-shading; graphic design mockups and posters;
+            traditional art done with graphite, Conte, acrylic, oilpaint; and lastly a demo game, coded with javascript
+            and illustrated game design. <br><br>
+            There are many ways of producing art, and each new medium is studied and learned with intention and
+            excitement.<br>
             </i>
-            </div>
-            <div class="blocktext5"><h1>3D Modeling and Animation</h1><table style="width:100%" p align="center"  class="table2">
-                    <th style="width:40%;"><br><br>
-                            In Motion<iframe src="https://drive.google.com/file/d/1rPsXnpDyP-FHtjAHfP1X4LKt9g6Fy3za/preview" width="90%" height="460vw" allow="autoplay"></iframe><div style="height: 3vw;"></div>
-                            Everything Falls<iframe src="https://drive.google.com/file/d/158SgmYJq20p6C6WNkEsIqhhN5BgyQL92/preview" width="90%" height="460vw" allow="autoplay"></iframe><div style="height: 3vw;"></div>
-                            </th>
-                            <td>
-                            <table p align="center"><p align="left"></p>
-                                <tr>
-                                    <div class="img-gallery-e center" data-gallery-title="My First Character Gallery">
-                                        <img src="assets/images/art/3d/animation_face.gif" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" height="200"/>
-                                        <img src="assets/images/art/3d/animation_tree.gif" onclick="openimageviewer(this)" data-title="Image 2" data-description="Image 2 desc" />
-                                        <img src="assets/images/art/3d/3d_face.jpg" onclick="openimageviewer(this)" data-title="This is an example of a longer title" data-description="This is also an example of a pretty long description, I think you can see that the space available expands to your needs" />
-                                        <img src="assets/images/art/3d/3d_green_face.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/animation_fast.gif" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/3d_room.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/3d_duolingo.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/3d_chess.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" /><br><br>
+        </div>
+        <div class="blocktext5">
+            <h1>3D Modeling and Animation</h1>
+            <table style="width:100%" p align="center" class="table2">
+                <th style="width:40%;"><br><br>
+                    In Motion<iframe src="https://drive.google.com/file/d/1rPsXnpDyP-FHtjAHfP1X4LKt9g6Fy3za/preview"
+                        width="90%" height="460vw" allow="autoplay"></iframe>
+                    <div style="height: 3vw;"></div>
+                    Everything Falls<iframe
+                        src="https://drive.google.com/file/d/158SgmYJq20p6C6WNkEsIqhhN5BgyQL92/preview" width="90%"
+                        height="460vw" allow="autoplay"></iframe>
+                    <div style="height: 3vw;"></div>
+                </th>
+                <td>
+                    <table p align="center">
+                        <p align="left"></p>
+                        <tr>
+                            <div class="img-gallery-e center" data-gallery-title="My First Character Gallery">
+                                <img src="assets/images/art/3d/animation_face.gif" onclick="openimageviewer(this)"
+                                    data-title="My Title" data-description="My Description" height="200" />
+                                <img src="assets/images/art/3d/animation_tree.gif" onclick="openimageviewer(this)"
+                                    data-title="Image 2" data-description="Image 2 desc" />
+                                <img src="assets/images/art/3d/3d_face.jpg" onclick="openimageviewer(this)"
+                                    data-title="This is an example of a longer title"
+                                    data-description="This is also an example of a pretty long description, I think you can see that the space available expands to your needs" />
+                                <img src="assets/images/art/3d/3d_green_face.jpg" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/animation_fast.gif" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/3d_room.jpg" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/3d_duolingo.png" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/3d_chess.jpg" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" /><br><br>
 
-                                        <img src="assets/images/art/3d/animation_fall_1.gif" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/animation_fall_2.gif" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/fall_falling.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/fall_ground.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/fall_desert.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/3d_malebase.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/3d_malebase_side_profile.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/3d_male_baseportrait.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" /><br><br>
+                                <img src="assets/images/art/3d/animation_fall_1.gif" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/animation_fall_2.gif" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/fall_falling.jpg" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/fall_ground.jpg" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/fall_desert.jpg" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/3d_malebase.png" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/3d_malebase_side_profile.png"
+                                    onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/3d_male_baseportrait.png" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" /><br><br>
 
-                                        <img src="assets/images/art/3d/water_boat.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/animation_water_sphere.gif" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/animation_water.gif" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                        <img src="assets/images/art/3d/animation_water_boat.gif" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-                                    </div>
-                                </td></table></tr><br><br></table> </div>
-            <div class="blocktext5"><h1>In browser game: ROADS</h1><br><br>
+                                <img src="assets/images/art/3d/water_boat.png" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/animation_water_sphere.gif"
+                                    onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/animation_water.gif" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                                <img src="assets/images/art/3d/animation_water_boat.gif" onclick="openimageviewer(this)"
+                                    data-title="Title" data-description="Desc" />
+                            </div>
+                </td>
+            </table>
+            </tr><br><br></table>
+        </div>
+        <div class="blocktext5">
+            <h1>In browser game: ROADS</h1><br><br>
             <style type="text/css">
-            #canvas {
-                position: relative;
-                left: 0;
-                right: 0;
-                margin: auto;
-                background-color: black;
-                width: 100%;
+                #canvas {
+                    position: relative;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    background-color: black;
+                    width: 100%;
                 }
             </style>
             <script type="text/javascript" src="lib/impact/impact.js"></script>
             <script type="text/javascript" src="lib/game/main.js"></script>
             </head>
-        <body><br><br>
-            <canvas id="canvas"></canvas><br>A web browser game coded in JavaScript, and a huge personal project for me to code, design, and draw. You can view the game in fullscreen and on mobile <a href="https://calebdanan.github.io/roads/">HERE</a>.</div>
-                </body>
-                </html>
-            <div class="blocktext5"><h1>Traditional Art</h1><br><br><br><br>
-            <div class="img-gallery-a center" data-gallery-title="My First Character Gallery">
-            <img src="assets/images/art/traditional/art_real_boy.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" height="200"/>
-            <img src="assets/images/art/traditional/art_orange.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" height="200"/>
-            <img src="assets/images/art/traditional/art_shell.jpg" onclick="openimageviewer(this)" data-title="Image 2" data-description="Image 2 desc" />
-            <img src="assets/images/art/traditional/art_vase.png" onclick="openimageviewer(this)" data-title="Image 2" data-description="Image 2 desc" />
-            <img src="assets/images/art/traditional/art_luca.jpg" onclick="openimageviewer(this)" data-title="This" data-description="text" />
-            <img src="assets/images/art/traditional/art_bubblegum.JPG" onclick="openimageviewer(this)" data-title="This" data-description="text" />
-            <img src="assets/images/art/traditional/art_baby_dog.jpg" onclick="openimageviewer(this)" data-title="This" data-description="text" />
-            <img src="assets/images/art/traditional/art_fish.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_esther.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_boat.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_pastel_woman_colorful.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_man_sitting.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_burn.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_thought.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
 
-            <img src="assets/images/art/traditional/art_back.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_strength.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_branch.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_coupe.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_ink_man_sitting.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/traditional/art_ink_multiple_men.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+            <body><br><br>
+                <canvas id="canvas"></canvas><br><br>Press the Spacebar to play, or click <a
+                    href="https://calebdanan.github.io/roads/">HERE</a> for full-screen or playing on mobile.<br>
+                <br>A web browser game coded in JavaScript, and a huge personal project for me to code, design, and
+                draw.
+        </div>
+</body>
 
-        </div></div>
+</html>
+<div class="blocktext5">
+    <h1>Traditional Art</h1><br><br><br><br>
+    <div class="img-gallery-a center" data-gallery-title="My First Character Gallery">
+        <img src="assets/images/art/traditional/art_real_boy.jpg" onclick="openimageviewer(this)" data-title="My Title"
+            data-description="My Description" height="200" />
+        <img src="assets/images/art/traditional/art_orange.jpg" onclick="openimageviewer(this)" data-title="My Title"
+            data-description="My Description" height="200" />
+        <img src="assets/images/art/traditional/art_shell.jpg" onclick="openimageviewer(this)" data-title="Image 2"
+            data-description="Image 2 desc" />
+        <img src="assets/images/art/traditional/art_vase.png" onclick="openimageviewer(this)" data-title="Image 2"
+            data-description="Image 2 desc" />
+        <img src="assets/images/art/traditional/art_luca.jpg" onclick="openimageviewer(this)" data-title="This"
+            data-description="text" />
+        <img src="assets/images/art/traditional/art_bubblegum.JPG" onclick="openimageviewer(this)" data-title="This"
+            data-description="text" />
+        <img src="assets/images/art/traditional/art_baby_dog.jpg" onclick="openimageviewer(this)" data-title="This"
+            data-description="text" />
+        <img src="assets/images/art/traditional/art_fish.png" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/traditional/art_esther.jpg" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/traditional/art_boat.jpg" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/traditional/art_pastel_woman_colorful.png" onclick="openimageviewer(this)"
+            data-title="Title" data-description="Desc" />
+        <img src="assets/images/art/traditional/art_man_sitting.png" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/traditional/art_burn.png" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/traditional/art_thought.jpg" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
 
-        <div class="blocktext5"><h1>Digital Art</h1><br><br><br><br>
-            <div class="img-gallery-a center" data-gallery-title="My First Character Gallery">
-                <img src="assets/images/art/illustration/digitalart_eeaao.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/graphic_design/graphic_princess.jpg" onclick="openimageviewer(this)" data-title="My Title" data-description="My Description" height="200"/>
-            <img src="assets/images/art/graphic_design/graphic_dbhs.jpg" onclick="openimageviewer(this)" data-title="Image 2" data-description="Image 2 desc" />
-            <img src="assets/images/art/graphic_design/graphic_digital_infograph.jpg" onclick="openimageviewer(this)" data-title="This itle" data-description="This is" />
-            <img src="assets/images/art/graphic_design/graphic_narnia_mock_up.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/illustration/digitalart_map_2.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+        <img src="assets/images/art/traditional/art_back.png" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/traditional/art_strength.png" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/traditional/art_branch.png" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/traditional/art_coupe.png" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/traditional/art_ink_man_sitting.png" onclick="openimageviewer(this)"
+            data-title="Title" data-description="Desc" />
+        <img src="assets/images/art/traditional/art_ink_multiple_men.png" onclick="openimageviewer(this)"
+            data-title="Title" data-description="Desc" />
 
-            <img src="assets/images/art/illustration/digitalart_love.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/illustration/digitalart_thinking.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
+    </div>
+</div>
 
-            <img src="assets/images/art/cellshading/paperpro.PNG" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/cellshading/Lysithea_moon.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/cellshading/link_paint.png" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/cellshading/5.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />
-            <img src="assets/images/art/cellshading/6.jpg" onclick="openimageviewer(this)" data-title="Title" data-description="Desc" />   
-        </div></div>
-        <br><br><div style="height: 10vw;"></div>
-        
-    </body>
-    <script src="assets/imageGallery/imageGallery.js"></script>
+<div class="blocktext5">
+    <h1>Digital Art</h1><br><br><br><br>
+    <div class="img-gallery-a center" data-gallery-title="My First Character Gallery">
+        <img src="assets/images/art/illustration/digitalart_eeaao.png" onclick="openimageviewer(this)"
+            data-title="Title" data-description="Desc" />
+        <img src="assets/images/art/graphic_design/graphic_princess.jpg" onclick="openimageviewer(this)"
+            data-title="My Title" data-description="My Description" height="200" />
+        <img src="assets/images/art/graphic_design/graphic_dbhs.jpg" onclick="openimageviewer(this)"
+            data-title="Image 2" data-description="Image 2 desc" />
+        <img src="assets/images/art/graphic_design/graphic_digital_infograph.jpg" onclick="openimageviewer(this)"
+            data-title="This itle" data-description="This is" />
+        <img src="assets/images/art/graphic_design/graphic_narnia_mock_up.jpg" onclick="openimageviewer(this)"
+            data-title="Title" data-description="Desc" />
+        <img src="assets/images/art/illustration/digitalart_map_2.png" onclick="openimageviewer(this)"
+            data-title="Title" data-description="Desc" />
+
+        <img src="assets/images/art/illustration/digitalart_love.png" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/illustration/digitalart_thinking.jpg" onclick="openimageviewer(this)"
+            data-title="Title" data-description="Desc" />
+
+        <img src="assets/images/art/cellshading/paperpro.PNG" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/cellshading/Lysithea_moon.jpg" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/cellshading/link_paint.png" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/cellshading/5.jpg" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+        <img src="assets/images/art/cellshading/6.jpg" onclick="openimageviewer(this)" data-title="Title"
+            data-description="Desc" />
+    </div>
+</div>
+<br><br>
+<div style="height: 10vw;"></div>
+
+</body>
+<script src="assets/imageGallery/imageGallery.js"></script>
+
 </html>
